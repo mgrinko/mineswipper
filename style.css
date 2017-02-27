@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.field__cell {
+  cursor: pointer;
+  text-align: center;
+  background-image: url("images/empty.png");
+}
+
+.field__cell:hover {
+  background-image: url("images/empty_hover.png");
+}
+
+.field {
+  /*border-collapse: collapse;*/
+
+}
+
+.field td {
+  padding: 0;
+  /*background-size: 100%;*/
+  width: 36px;
+  height: 36px;
+}
+
+
+
+
+.field__cell--value0 {
+  background-image: url("images/value0.png");
+}
+
+.field__cell--value1 {
+  background-image: url("images/value1.png");
+}
+
+.field__cell--value2 {
+  background-image: url("images/value2.png");
+}
+
+.field__cell--value3 {
+  background-image: url("images/value3.png");
+}
+
+.field__cell--value4 {
+  background-image: url("images/value4.png");
+}
+
+.field__cell--value_mine {
+  background-image: url("images/value_mine.png");
+}
+
+.field__cell--value_flag {
+  background-image: url("images/value_flag.png");
+}
+
+.game {
+  position:relative;
+}
+
+.game__inner {
+  position:absolute;
+  top:50%;
+  left:50%;
+  padding: 30px;
+  border: 2px solid #c1c1c1;
+  border-radius: 3px;
+  background-color: #ffffff;
+  transform: translate(-50%, -50%);
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #99aab5;
+  font-size: 30px;
+  text-align: center;
+}
+
+.yes {
+  text-decoration: underline;
+}
+
+.game__info {
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.game__info td {
+  text-align: left;
+  font-family: Roboto, sans-serif;
+  font-size: 48px;
+  border-radius: 3px;
+  /*background-color: #e6e7e8;*/
+  border: 2px solid #c1c1c1;
+  height: 60px;
+  line-height: 60px;
+  font-weight: bold;
+  color: #99aab5;
+  padding-bottom: 5px;
+  padding-left: 5px;
+}
+
+.game__info--counter:before {
+  content: url(images/point.png);
+}
+
+.game__info--timer:before {
+  content: url(images/timer.png);
+}
+
+.mine {
+  margin: 50px;
+  border: 2px #c1c1c1 solid;
+  display:inline-block;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#yes, #no, #start {
+  cursor: pointer;
+}
+
+.starting {
+  font-size: 14px;
+}
+
+.starting input {
+  font-size: 14px;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
+  border: 2px solid #99aab5;
+  color: #99aab5;
+  padding: 5px;
+}
